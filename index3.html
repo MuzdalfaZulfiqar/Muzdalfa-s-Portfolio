@@ -1,0 +1,2789 @@
+<!-- <!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muzdalfa Zulfiqar — Portfolio 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['JetBrains Mono', 'monospace'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: '#a78bfa',
+            dark: '#09090b',
+            card: '#121214',
+            border: '#27272a'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #09090b;
+      color: #fafafa;
+      overflow-x: hidden;
+    }
+    
+    /* 2026 Mesh Background Effect */
+    .mesh-gradient {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: -1;
+      background: 
+        radial-gradient(circle at 0% 0%, rgba(167, 139, 250, 0.07) 0%, transparent 40%),
+        radial-gradient(circle at 100% 100%, rgba(139, 92, 246, 0.05) 0%, transparent 40%);
+    }
+
+    /* Glass Bento Cards */
+    .bento-card {
+      background: rgba(18, 18, 20, 0.4);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 28px;
+      transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+    .bento-card:hover {
+      border-color: rgba(167, 139, 250, 0.3);
+      background: rgba(18, 18, 20, 0.7);
+      transform: translateY(-5px);
+    }
+
+    /* Floating Navigation Island */
+    .nav-island {
+      background: rgba(9, 9, 11, 0.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 100px;
+    }
+
+    .text-gradient {
+      background: linear-gradient(to bottom right, #ffffff, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #09090b; }
+    ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #a78bfa; }
+  </style>
+</head>
+<body class="selection:bg-brand/30">
+
+  <div class="mesh-gradient"></div>
+
+  <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-3xl">
+    <div class="nav-island px-6 py-3 flex justify-between items-center shadow-2xl">
+      <div class="font-extrabold tracking-tighter text-xl">MZ<span class="text-brand">.</span></div>
+      <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#Education" class="hover:text-white transition-colors">Education</a>
+        <a href="#Internships" class="hover:text-white transition-colors">Experience</a>
+        <a href="#Projects" class="hover:text-white transition-colors">Projects</a>
+      </div>
+      <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+              class="bg-white text-black px-5 py-2 rounded-full text-[11px] font-bold hover:bg-brand hover:text-white transition-all">
+        LET'S TALK
+      </button>
+    </div>
+  </nav>
+
+  <section class="min-h-screen flex flex-col justify-center items-center pt-20 px-6 relative overflow-hidden">
+    <div class="absolute w-[500px] h-[500px] bg-brand/10 blur-[120px] rounded-full -z-10 animate-pulse"></div>
+    
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-zinc-400 text-[10px] font-bold uppercase tracking-widest mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand animate-ping"></span> 2026 Portfolio Version
+      </div>
+      
+      <h1 class="text-6xl md:text-8xl font-black tracking-tight leading-none text-gradient">
+        Muzdalfa Zulfiqar
+      </h1>
+      <p class="text-2xl md:text-3xl font-light text-zinc-400 font-mono tracking-tighter">
+        WEB DEVELOPER — <span class="text-white italic">Designing for People, Not Machines.</span>
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4 pt-6">
+        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+                class="bg-brand text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-brand/20 hover:scale-105 transition-transform">
+          Contact Me
+        </button>
+        <a href="assets/Muzdalfa Zulfiqar Resume.pdf" download="Muzdalfa_Zulfiqar_CV.pdf" 
+           class="border border-zinc-800 text-white px-8 py-4 rounded-2xl font-bold hover:bg-zinc-900 transition-all flex items-center gap-2">
+          Download CV <i class="fas fa-arrow-down text-xs"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+      
+      <div class="bento-card md:col-span-8 p-10 flex flex-col justify-center">
+        <h2 class="text-brand font-mono text-sm mb-4 tracking-widest uppercase">// About Me</h2>
+        <p class="text-2xl font-semibold leading-relaxed mb-6">
+          "What if we could make everyday challenges disappear with just a few lines of code?"
+        </p>
+        <div class="space-y-4 text-zinc-400 text-lg leading-relaxed">
+            <p>Hi, I’m a software engineering student at <span class="text-white font-medium">COMSATS University Islamabad</span> and <span class="text-white font-medium">GDGoC Web Lead</span>. I specialize in the MERN stack, building user-friendly, responsive web apps.</p>
+            <p>As a top fellow in the Bytewise Fellowship, I’ve honed my problem-solving skills and am currently exploring <span class="text-brand">AI integration</span> to enhance development workflows.</p>
+        </div>
+      </div>
+
+      <div class="bento-card md:col-span-4 overflow-hidden relative group">
+        <img src="muzdalfa.jpg" alt="Muzdalfa" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+        <div class="absolute bottom-6 left-6">
+            <p class="text-xs font-mono text-brand">BASED IN</p>
+            <p class="text-lg font-bold">Islamabad, PK</p>
+        </div>
+      </div>
+
+      <div id="Education" class="bento-card md:col-span-12 p-10">
+        <h2 class="text-brand font-mono text-sm mb-8 tracking-widest uppercase">// Academic Journey</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="space-y-2 border-l border-zinc-800 pl-6">
+                <p class="text-xs text-brand font-bold">2022 - 2026</p>
+                <h3 class="text-xl font-bold">BS Software Engineering</h3>
+                <p class="text-zinc-500 text-sm italic">COMSATS University Islamabad</p>
+                <div class="inline-block mt-2 px-3 py-1 bg-brand/10 rounded-lg text-brand font-bold text-sm">CGPA: 3.86</div>
+            </div>
+            <div class="space-y-2 border-l border-zinc-800 pl-6">
+                <p class="text-xs text-zinc-500 font-bold">2020 - 2022</p>
+                <h3 class="text-xl font-bold">Intermediate (FSc)</h3>
+                <p class="text-zinc-500 text-sm italic">Punjab Group of Colleges</p>
+                <p class="text-zinc-400 font-medium">1067 / 1100 Marks</p>
+            </div>
+            <div class="space-y-2 border-l border-zinc-800 pl-6">
+                <p class="text-xs text-zinc-500 font-bold">2018 - 2020</p>
+                <h3 class="text-xl font-bold">Matriculation</h3>
+                <p class="text-zinc-500 text-sm italic">Allied School</p>
+                <p class="text-zinc-400 font-medium">1067 / 1100 Marks</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-24 px-6 bg-zinc-950/40">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-black tracking-tighter mb-2">Technical Arsenal</h2>
+        <p class="text-zinc-500 font-mono text-sm uppercase tracking-[0.2em]">Tools for the Modern Web</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group hover:bg-brand/5">
+          <i class="fab fa-react text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-sm font-bold tracking-tight">React.js</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group hover:bg-brand/5">
+            <i class="fab fa-node-js text-4xl group-hover:text-brand transition-colors"></i>
+            <span class="text-sm font-bold tracking-tight">Node.js</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group hover:bg-brand/5">
+            <i class="fas fa-database text-4xl group-hover:text-brand transition-colors"></i>
+            <span class="text-sm font-bold tracking-tight">MongoDB</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group hover:bg-brand/5">
+            <i class="fas fa-code text-4xl group-hover:text-brand transition-colors"></i>
+            <span class="text-sm font-bold tracking-tight">Express.js</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group hover:bg-brand/5">
+            <i class="fab fa-js text-4xl group-hover:text-brand transition-colors"></i>
+            <span class="text-sm font-bold tracking-tight">JavaScript</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group hover:bg-brand/5">
+            <i class="fab fa-git-alt text-4xl group-hover:text-brand transition-colors"></i>
+            <span class="text-sm font-bold tracking-tight">Git & GitHub</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group hover:bg-brand/5">
+            <i class="fab fa-aws text-4xl group-hover:text-brand transition-colors"></i>
+            <span class="text-sm font-bold tracking-tight italic text-xs text-center">AWS (EC2, S3 Basic)</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group hover:bg-brand/5">
+            <i class="fab fa-wordpress text-4xl group-hover:text-brand transition-colors"></i>
+            <span class="text-sm font-bold tracking-tight">WordPress</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group hover:bg-brand/5">
+            <i class="fab fa-java text-4xl group-hover:text-brand transition-colors"></i>
+            <span class="text-sm font-bold tracking-tight">Java</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group hover:bg-brand/5">
+            <svg class="w-10 h-10 group-hover:scale-110 transition-transform" viewBox="0 0 256 256">
+                <path fill="#38BDF8" d="M24,9.604c-5.589,0 -9.347,2.439 -11.276,7.318c-0.2,0.505 0.417,0.92 0.816,0.551c2.035,-1.882 4.322,-2.505 6.86,-1.871c1.826,0.456 3.131,1.781 4.576,3.247c2.352,2.387 5.075,5.151 11.024,5.151c5.589,0 9.348,-2.44 11.276,-7.319c0.2,-0.505 -0.417,-0.92 -0.816,-0.551c-2.035,1.882 -4.322,2.506 -6.86,1.872c-1.825,-0.456 -3.13,-1.781 -4.575,-3.247c-2.353,-2.388 -5.077,-5.151 -11.025,-5.151z"/>
+            </svg>
+            <span class="text-sm font-bold tracking-tight">Tailwind CSS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Internships" class="py-24 px-6 max-w-7xl mx-auto">
+    <h2 class="text-brand font-mono text-sm mb-12 tracking-widest uppercase">// Professional Experience</h2>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+        <div class="bento-card p-10 flex flex-col border-l-4 border-l-brand">
+            <div class="flex justify-between items-start mb-6">
+                <div>
+                    <h3 class="text-2xl font-bold">Frontend Fellow</h3>
+                    <p class="text-zinc-500 font-mono text-sm">Bytewise Fellowship</p>
+                </div>
+                <span class="text-xs bg-zinc-800 px-3 py-1 rounded-full text-zinc-300">July - Aug 2024</span>
+            </div>
+            <p class="text-zinc-400 mb-6 leading-relaxed">
+                Worked remotely as a Frontend Fellow, focusing on high-fidelity clones like <span class="text-white">Sadapay</span>, <span class="text-white">Netflix</span>, and <span class="text-white">TaxPal</span> using Tailwind CSS. Gained deep experience in responsive architecture.
+            </p>
+            <div class="mt-auto flex gap-2">
+                <span class="text-[10px] font-bold px-2 py-1 bg-zinc-900 rounded border border-zinc-800">TAILWIND</span>
+                <span class="text-[10px] font-bold px-2 py-1 bg-zinc-900 rounded border border-zinc-800">UI/UX</span>
+            </div>
+        </div>
+
+        <div class="bento-card p-10 flex flex-col border-l-4 border-l-zinc-700">
+            <div class="flex justify-between items-start mb-6">
+                <div>
+                    <h3 class="text-2xl font-bold">Web Development Intern</h3>
+                    <p class="text-zinc-500 font-mono text-sm">Technic Mentors</p>
+                </div>
+                <span class="text-xs bg-zinc-800 px-3 py-1 rounded-full text-zinc-300">July - Aug 2024</span>
+            </div>
+            <p class="text-zinc-400 mb-6 leading-relaxed">
+                On-site Web Development internship specializing in <span class="text-white">React</span>. Contributed to the <span class="text-white">Notebox project</span>, focusing on feature development and optimizing existing codebases for scalability.
+            </p>
+            <div class="mt-auto flex gap-2">
+                <span class="text-[10px] font-bold px-2 py-1 bg-zinc-900 rounded border border-zinc-800">REACT</span>
+                <span class="text-[10px] font-bold px-2 py-1 bg-zinc-900 rounded border border-zinc-800">FULLSTACK</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="Projects" class="py-24 px-6 bg-zinc-950/20">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-center text-4xl font-black mb-16 tracking-tighter">Featured Projects</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bento-card p-8 flex flex-col group">
+                <div class="w-12 h-12 bg-brand/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-black transition-all">
+                    <i class="fas fa-book-open text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">AskSunnah</h3>
+                <p class="text-zinc-500 text-sm mb-6 flex-grow leading-relaxed">
+                    Digital Islamic library & Q&A platform for a Canada-based NGO. Includes secure admin dashboard and content moderation.
+                </p>
+                <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider">MERN · REST APIs · Stripe</div>
+                <a href="https://asksunnah.com/" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                    View Live <i class="fas fa-arrow-right text-xs text-brand"></i>
+                </a>
+            </div>
+
+            <div class="bento-card p-8 flex flex-col group">
+                <div class="w-12 h-12 bg-brand/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-black transition-all">
+                    <i class="fas fa-cogs text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Society Spotlight</h3>
+                <p class="text-zinc-500 text-sm mb-6 flex-grow leading-relaxed">
+                    Collaboration hub for university societies like GDG CUI and IEEE to showcase profiles and manage activities.
+                </p>
+                <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider">MERN · Bootstrap</div>
+                <a href="https://github.com/MuzdalfaZulfiqar/Society-Spotlight" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                    GitHub Repo <i class="fab fa-github text-xs text-brand"></i>
+                </a>
+            </div>
+
+            <div class="bento-card p-8 flex flex-col group">
+                <div class="w-12 h-12 bg-brand/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-black transition-all">
+                    <i class="fas fa-utensils text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Recipe Master</h3>
+                <p class="text-zinc-500 text-sm mb-6 flex-grow leading-relaxed">
+                    Full-stack recipe management application featuring user authentication and cloud-synced MongoDB storage.
+                </p>
+                <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider">MERN · Cloud Storage</div>
+                <a href="https://github.com/MuzdalfaZulfiqar/Recipe-Master" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                    GitHub Repo <i class="fab fa-github text-xs text-brand"></i>
+                </a>
+            </div>
+
+            <div class="bento-card p-8 flex flex-col group">
+                <div class="w-12 h-12 bg-brand/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-black transition-all">
+                    <i class="fas fa-calculator text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">TaxPal</h3>
+                <p class="text-zinc-500 text-sm mb-6 flex-grow leading-relaxed">
+                    Modern UI design focus using Tailwind CSS to build highly responsive financial management components.
+                </p>
+                <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider">Tailwind CSS</div>
+                <a href="https://github.com/MuzdalfaZulfiqar/BytewiseTailwindProject2-TaxPal.github.io" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                    GitHub Repo <i class="fab fa-github text-xs text-brand"></i>
+                </a>
+            </div>
+
+            <div class="bento-card p-8 flex flex-col group">
+                <div class="w-12 h-12 bg-brand/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-black transition-all">
+                    <i class="fas fa-brain text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">AI Exam Seating</h3>
+                <p class="text-zinc-500 text-sm mb-6 flex-grow leading-relaxed">
+                    An AI-driven system developed to optimize and automate seating arrangements for university exams.
+                </p>
+                <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider">Python · AI Algorithms</div>
+                <a href="https://github.com/MuzdalfaZulfiqar/AI-based-Exam-Seating" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                    GitHub Repo <i class="fab fa-github text-xs text-brand"></i>
+                </a>
+            </div>
+
+            <div class="bento-card p-8 flex flex-col group">
+                <div class="w-12 h-12 bg-brand/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-black transition-all">
+                    <i class="fas fa-user-tie text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">AI Career Suggestion</h3>
+                <p class="text-zinc-500 text-sm mb-6 flex-grow leading-relaxed">
+                    Recommendation engine that analyzes skills and user interests to suggest optimal career paths.
+                </p>
+                <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider">Python · Machine Learning</div>
+                <a href="https://github.com/MuzdalfaZulfiqar/AI-based-career-suggestion" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                    GitHub Repo <i class="fab fa-github text-xs text-brand"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 px-6 relative">
+    <div class="max-w-3xl mx-auto bento-card p-12 text-center overflow-hidden">
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-brand/20 blur-[60px] rounded-full"></div>
+        <h2 class="text-5xl font-black tracking-tighter mb-8">Let's Work Together</h2>
+        
+        <div class="space-y-6 mb-12">
+            <a href="mailto:muzdalfazulfiqar11@gmail.com" class="block text-2xl font-medium hover:text-brand transition-colors break-all">
+                muzdalfazulfiqar11@gmail.com
+            </a>
+            <p class="text-zinc-500 text-xl">0343-4344227</p>
+        </div>
+
+        <div class="flex justify-center gap-8">
+            <a href="https://linkedin.com/in/muzdalfa-zulfiqar" target="_blank" class="group flex flex-col items-center gap-2">
+                <div class="w-14 h-14 rounded-full border border-zinc-800 flex items-center justify-center group-hover:bg-brand group-hover:text-black transition-all">
+                    <i class="fab fa-linkedin-in text-xl"></i>
+                </div>
+                <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-500 group-hover:text-white">LinkedIn</span>
+            </a>
+            <a href="https://github.com/MuzdalfaZulfiqar" target="_blank" class="group flex flex-col items-center gap-2">
+                <div class="w-14 h-14 rounded-full border border-zinc-800 flex items-center justify-center group-hover:bg-brand group-hover:text-black transition-all">
+                    <i class="fab fa-github text-xl"></i>
+                </div>
+                <span class="text-[10px] font-bold tracking-widest uppercase text-zinc-500 group-hover:text-white">GitHub</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="mt-20 text-center text-zinc-600 font-mono text-[10px] tracking-[0.3em] uppercase">
+        © 2026 Muzdalfa Zulfiqar · Built for the Next Web
+    </footer>
+  </section>
+
+</body>
+</html> -->
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muzdalfa Zulfiqar — Portfolio 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['JetBrains Mono', 'monospace'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: '#10b981',
+            darkBg: '#020617',
+            lightBg: '#f8fafc',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { transition: background-color 0.5s ease, color 0.5s ease; overflow-x: hidden; }
+
+    /* Modern Section Header Style - Replaces // Slases */
+    .section-tag {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #10b981;
+    }
+    .section-tag::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: #10b981;
+      border-radius: 1px;
+      transform: rotate(45deg);
+    }
+    .section-tag::after {
+      content: '';
+      height: 1px;
+      width: 50px;
+      background: linear-gradient(90deg, #10b981, transparent);
+    }
+
+    .mesh-gradient {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: -1;
+      opacity: 0.6;
+    }
+    .dark .mesh-gradient {
+      background: radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
+                  radial-gradient(circle at 100% 100%, rgba(56, 189, 248, 0.05) 0%, transparent 40%);
+    }
+    .light .mesh-gradient {
+      background: radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.1) 0%, transparent 40%),
+                  radial-gradient(circle at 100% 100%, rgba(15, 23, 42, 0.03) 0%, transparent 40%);
+    }
+
+    .bento-card {
+      backdrop-filter: blur(12px);
+      border-radius: 28px;
+      transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    }
+    .dark .bento-card {
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .light .bento-card {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
+    }
+    .bento-card:hover {
+      transform: translateY(-8px);
+      border-color: #10b981;
+    }
+
+    .text-gradient {
+      background: linear-gradient(to bottom right, #ffffff, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .light .text-gradient {
+      background: linear-gradient(to bottom right, #020617, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #10b981; border-radius: 10px; }
+  </style>
+</head>
+<body class="bg-lightBg dark:bg-darkBg text-slate-900 dark:text-slate-100 selection:bg-brand/20">
+
+  <div class="mesh-gradient"></div>
+
+  <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[95%] max-w-4xl">
+    <div class="bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl px-6 py-3 flex justify-between items-center rounded-full border border-slate-200 dark:border-slate-800 shadow-2xl">
+      <div class="font-extrabold tracking-tighter text-xl">MZ<span class="text-brand">.</span></div>
+      
+      <div class="hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-widest opacity-60">
+        <a href="#about" class="hover:text-brand transition-colors">About</a>
+        <a href="#Education" class="hover:text-brand transition-colors">Education</a>
+        <a href="#Internships" class="hover:text-brand transition-colors">Experience</a>
+        <a href="#Projects" class="hover:text-brand transition-colors">Projects</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button onclick="document.documentElement.classList.toggle('dark')" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+          <i class="fas fa-circle-half-stroke"></i>
+        </button>
+        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+                class="bg-brand text-white px-5 py-2 rounded-full text-[11px] font-bold hover:brightness-110 transition-all">
+          LET'S TALK
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="min-h-screen flex flex-col justify-center items-center pt-20 px-6 relative">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand/20 bg-brand/5 text-brand text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></span> 2026 Portfolio Version
+      </div>
+      
+      <h1 class="text-6xl md:text-8xl font-black tracking-tight leading-none text-gradient">
+        Muzdalfa Zulfiqar
+      </h1>
+      <p class="text-2xl md:text-3xl font-light opacity-60 font-mono tracking-tighter">
+        WEB DEVELOPER — <span class="dark:text-white text-slate-900 italic">Designing for People, Not Machines.</span>
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4 pt-6">
+        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+                class="bg-brand text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-brand/20 hover:scale-105 transition-transform">
+          Contact Me
+        </button>
+        <a href="assets/Muzdalfa Zulfiqar Resume.pdf" download="Muzdalfa_Zulfiqar_CV.pdf" 
+           class="border border-slate-200 dark:border-slate-800 dark:text-white px-8 py-4 rounded-2xl font-bold hover:bg-brand/5 transition-all flex items-center gap-2">
+          Download CV <i class="fas fa-arrow-down text-xs"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+      <div class="bento-card md:col-span-8 p-10 flex flex-col justify-center">
+        <div class="section-tag mb-6">About Me</div>
+        <p class="text-2xl font-semibold leading-relaxed mb-6">
+          "What if we could make everyday challenges disappear with just a few lines of code?"
+        </p>
+        <div class="space-y-4 opacity-70 text-lg leading-relaxed">
+            <p>Hi, I’m a software engineering student at <span class="font-bold">COMSATS University Islamabad</span> and <span class="text-brand font-medium">GDGoC Web Lead</span>. I specialize in the MERN stack, building user-friendly, responsive web apps.</p>
+            <p>As a top fellow in the Bytewise Fellowship, I’ve honed my problem-solving skills and am currently exploring <span class="text-brand font-bold">AI integration</span> to enhance development workflows.</p>
+        </div>
+      </div>
+
+      <div class="bento-card md:col-span-4 overflow-hidden relative group">
+        <img src="muzdalfa.jpg" alt="Muzdalfa" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+        <div class="absolute bottom-6 left-6">
+            <p class="text-[10px] font-mono text-brand tracking-widest">BASED IN</p>
+            <p class="text-lg font-bold text-white">Islamabad, PK</p>
+        </div>
+      </div>
+
+      <div id="Education" class="bento-card md:col-span-12 p-10">
+        <div class="section-tag mb-10">Academic Journey</div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="space-y-2 border-l-2 border-brand pl-6">
+                <p class="text-xs text-brand font-bold">2022 - 2026</p>
+                <h3 class="text-xl font-bold">BS Software Engineering</h3>
+                <p class="opacity-50 text-sm italic">COMSATS University Islamabad</p>
+                <div class="inline-block mt-2 px-3 py-1 bg-brand/10 rounded-lg text-brand font-bold text-sm">CGPA: 3.86</div>
+            </div>
+            <div class="space-y-2 border-l-2 border-slate-200 dark:border-slate-800 pl-6">
+                <p class="text-xs opacity-50 font-bold">2020 - 2022</p>
+                <h3 class="text-xl font-bold">Intermediate (FSc)</h3>
+                <p class="opacity-50 text-sm italic">Punjab Group of Colleges</p>
+                <p class="font-medium">1067 / 1100 Marks</p>
+            </div>
+            <div class="space-y-2 border-l-2 border-slate-200 dark:border-slate-800 pl-6">
+                <p class="text-xs opacity-50 font-bold">2018 - 2020</p>
+                <h3 class="text-xl font-bold">Matriculation</h3>
+                <p class="opacity-50 text-sm italic">Allied School</p>
+                <p class="font-medium">1067 / 1100 Marks</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <div class="section-tag justify-center mb-4">Technical Arsenal</div>
+        <h2 class="text-4xl font-black tracking-tighter">Tools for the Modern Web</h2>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group">
+          <i class="fab fa-react text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-sm font-bold tracking-tight">React.js</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group">
+          <i class="fab fa-node-js text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-sm font-bold tracking-tight">Node.js</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group">
+          <i class="fas fa-database text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-sm font-bold tracking-tight">MongoDB</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group">
+          <i class="fas fa-code text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-sm font-bold tracking-tight">Express.js</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group">
+          <i class="fab fa-js text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-sm font-bold tracking-tight">JavaScript</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group">
+          <i class="fab fa-git-alt text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-sm font-bold tracking-tight">Git & GitHub</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group">
+          <i class="fab fa-aws text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-xs font-bold text-center">AWS (EC2, S3)</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group">
+          <i class="fab fa-wordpress text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-sm font-bold">WordPress</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group">
+          <i class="fab fa-java text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-sm font-bold">Java</span>
+        </div>
+        <div class="bento-card p-6 flex flex-col items-center gap-4 group">
+          <i class="fab fa-css3-alt text-4xl group-hover:text-brand transition-colors"></i>
+          <span class="text-sm font-bold">Tailwind CSS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Internships" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="section-tag mb-12 justify-center">Professional Experience</div>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+        <div class="bento-card p-10 border-l-4 border-brand">
+            <div class="flex justify-between items-start mb-6">
+                <div>
+                    <h3 class="text-2xl font-bold">Frontend Fellow</h3>
+                    <p class="opacity-50 font-mono text-sm">Bytewise Fellowship</p>
+                </div>
+                <span class="text-[10px] font-bold bg-brand/10 text-brand px-3 py-1 rounded-full uppercase tracking-widest">July - Aug 2024</span>
+            </div>
+            <p class="opacity-70 mb-6 leading-relaxed">
+                Worked remotely as a Frontend Fellow, focusing on high-fidelity clones like <span class="font-bold">Sadapay</span>, <span class="font-bold">Netflix</span>, and <span class="font-bold">TaxPal</span> using Tailwind CSS. Gained deep experience in responsive architecture.
+            </p>
+            <div class="flex gap-2">
+                <span class="text-[9px] font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">TAILWIND</span>
+                <span class="text-[9px] font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">HTML</span>
+                <span class="text-[9px] font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">CSS</span>
+                <span class="text-[9px] font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">React</span>
+            </div>
+        </div>
+
+        <div class="bento-card p-10 border-l-4 border-slate-300 dark:border-slate-700">
+            <div class="flex justify-between items-start mb-6">
+                <div>
+                    <h3 class="text-2xl font-bold">Web Development Intern</h3>
+                    <p class="opacity-50 font-mono text-sm">Technic Mentors</p>
+                </div>
+                <span class="text-[10px] font-bold bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full uppercase tracking-widest">July - Aug 2024</span>
+            </div>
+            <p class="opacity-70 mb-6 leading-relaxed">
+                On-site Web Development internship specializing in <span class="font-bold">React</span>. Contributed to the <span class="font-bold">Notebox project</span>, focusing on feature development and optimizing codebases for scalability.
+            </p>
+            <div class="flex gap-2">
+                <span class="text-[9px] font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">REACT</span>
+                <span class="text-[9px] font-bold px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded">FULLSTACK</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="Projects" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="section-tag mb-12 justify-center">Featured Projects</div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="bento-card p-8 flex flex-col group">
+            <div class="w-12 h-12 bg-brand/10 text-brand rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+                <i class="fas fa-book-open text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">AskSunnah</h3>
+            <p class="opacity-50 text-sm mb-6 flex-grow leading-relaxed">
+                Digital Islamic library & Q&A platform for a Canada-based NGO. Includes secure admin dashboard and content moderation.
+            </p>
+            <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider font-bold">MERN · REST APIs · Stripe</div>
+            <a href="https://asksunnah.com/" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                View Live <i class="fas fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+
+        <div class="bento-card p-8 flex flex-col group">
+            <div class="w-12 h-12 bg-brand/10 text-brand rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+                <i class="fas fa-layer-group text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Society Spotlight</h3>
+            <p class="opacity-50 text-sm mb-6 flex-grow leading-relaxed">
+                Collaboration hub for university societies like GDG CUI and IEEE to showcase profiles and manage activities.
+            </p>
+            <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider font-bold">MERN · Bootstrap</div>
+            <a href="https://github.com/MuzdalfaZulfiqar/Society-Spotlight" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                GitHub Repo <i class="fab fa-github text-xs"></i>
+            </a>
+        </div>
+
+        <div class="bento-card p-8 flex flex-col group">
+            <div class="w-12 h-12 bg-brand/10 text-brand rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+                <i class="fas fa-utensils text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Recipe Master</h3>
+            <p class="opacity-50 text-sm mb-6 flex-grow leading-relaxed">
+                Full-stack recipe management application featuring user authentication and cloud-synced MongoDB storage.
+            </p>
+            <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider font-bold">MERN · Cloud Storage</div>
+            <a href="https://github.com/MuzdalfaZulfiqar/Recipe-Master" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                GitHub Repo <i class="fab fa-github text-xs"></i>
+            </a>
+        </div>
+
+        <div class="bento-card p-8 flex flex-col group">
+            <div class="w-12 h-12 bg-brand/10 text-brand rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+                <i class="fas fa-calculator text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">TaxPal</h3>
+            <p class="opacity-50 text-sm mb-6 flex-grow leading-relaxed">
+                Modern UI design focus using Tailwind CSS to build highly responsive financial management components.
+            </p>
+            <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider font-bold">Tailwind CSS</div>
+            <a href="https://github.com/MuzdalfaZulfiqar/BytewiseTailwindProject2-TaxPal.github.io" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                GitHub Repo <i class="fab fa-github text-xs"></i>
+            </a>
+        </div>
+
+        <div class="bento-card p-8 flex flex-col group">
+            <div class="w-12 h-12 bg-brand/10 text-brand rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+                <i class="fas fa-brain text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">AI Exam Seating</h3>
+            <p class="opacity-50 text-sm mb-6 flex-grow leading-relaxed">
+                An AI-driven system developed to optimize and automate seating arrangements for university exams.
+            </p>
+            <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider font-bold">Python · AI Algorithms</div>
+            <a href="https://github.com/MuzdalfaZulfiqar/AI-based-Exam-Seating" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                GitHub Repo <i class="fab fa-github text-xs"></i>
+            </a>
+        </div>
+
+        <div class="bento-card p-8 flex flex-col group">
+            <div class="w-12 h-12 bg-brand/10 text-brand rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+                <i class="fas fa-user-tie text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">AI Career Suggestion</h3>
+            <p class="opacity-50 text-sm mb-6 flex-grow leading-relaxed">
+                Recommendation engine that analyzes skills and user interests to suggest optimal career paths.
+            </p>
+            <div class="text-[10px] font-mono text-brand mb-6 uppercase tracking-wider font-bold">Python · ML</div>
+            <a href="https://github.com/MuzdalfaZulfiqar/AI-based-career-suggestion" target="_blank" class="font-bold text-sm flex items-center gap-2 hover:translate-x-2 transition-transform">
+                GitHub Repo <i class="fab fa-github text-xs"></i>
+            </a>
+        </div>
+
+    </div>
+  </section>
+
+  <!-- <section id="contact" class="py-24 px-6 relative">
+    <div class="max-w-4xl mx-auto bento-card p-12 md:p-20 text-center overflow-hidden relative">
+        
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 opacity-[0.03] text-[15rem] font-black pointer-events-none select-none">
+          MERN
+        </div>
+
+        <div class="section-tag justify-center mb-10">Connection</div>
+        
+        <div class="relative z-10 mb-12">
+            <h2 class="text-5xl md:text-8xl font-black tracking-tighter leading-[0.9] dark:text-white text-slate-900">
+              Got a <span class="text-brand">vision?</span> <br>
+              I’ve got the <span class="italic font-light opacity-80">source code.</span>
+            </h2>
+            <div class="mt-8 flex justify-center">
+                <span class="px-4 py-1.5 rounded-full border border-brand/20 bg-brand/5 text-brand text-[10px] font-bold uppercase tracking-[0.2em]">
+                    Available for 2026 Opportunities
+                </span>
+            </div>
+        </div>
+
+        <div class="space-y-8 mb-16 relative z-10">
+            <a href="mailto:muzdalfazulfiqar11@gmail.com" class="group inline-block">
+                <span class="text-2xl md:text-4xl font-bold hover:text-brand transition-colors break-all">
+                    muzdalfazulfiqar11@gmail.com
+                </span>
+                <div class="h-0.5 w-0 group-hover:w-full bg-brand transition-all duration-500 mt-1"></div>
+            </a>
+            <p class="opacity-50 text-xl font-mono tracking-tighter">0343-4344227</p>
+        </div>
+
+        <div class="flex justify-center gap-10 relative z-10">
+            <a href="https://linkedin.com/in/muzdalfa-zulfiqar" target="_blank" class="group flex flex-col items-center gap-3">
+                <div class="w-16 h-16 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-center group-hover:bg-brand group-hover:border-brand group-hover:text-white transition-all duration-300 group-hover:-translate-y-2">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                </div>
+                <span class="text-[10px] font-bold tracking-widest uppercase opacity-40 group-hover:opacity-100 group-hover:text-brand transition-all">LinkedIn</span>
+            </a>
+            <a href="https://github.com/MuzdalfaZulfiqar" target="_blank" class="group flex flex-col items-center gap-3">
+                <div class="w-16 h-16 rounded-2xl border border-slate-200 dark:border-slate-800 flex items-center justify-center group-hover:bg-brand group-hover:border-brand group-hover:text-white transition-all duration-300 group-hover:-translate-y-2">
+                    <i class="fab fa-github text-2xl"></i>
+                </div>
+                <span class="text-[10px] font-bold tracking-widest uppercase opacity-40 group-hover:opacity-100 group-hover:text-brand transition-all">GitHub</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="mt-24 text-center">
+        <div class="opacity-30 font-mono text-[9px] tracking-[0.5em] uppercase mb-4">
+            Designed for the 2026 Web Standard
+        </div>
+        <div class="text-[10px] font-bold opacity-20">
+            © 2026 MUZDALFA ZULFIQAR · ALL RIGHTS RESERVED
+        </div>
+    </footer>
+  </section> -->
+<section id="contact" class="py-24 px-6 relative">
+    <div class="max-w-4xl mx-auto bento-card p-12 text-center relative overflow-hidden">
+        
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.04] dark:opacity-[0.03] text-[12rem] font-black pointer-events-none select-none tracking-tighter">
+          MERN
+        </div>
+
+        <div class="relative z-10">
+            <div class="section-tag justify-center mb-8">Get in touch</div>
+            
+            <h2 class="text-4xl md:text-6xl font-black tracking-tighter mb-10 leading-none">
+              Let’s ship <br> <span class="text-brand italic">something real.</span>
+            </h2>
+            
+            <div class="mb-12">
+                <a href="mailto:muzdalfazulfiqar11@gmail.com" class="text-xl md:text-2xl font-bold hover:text-brand transition-colors border-b-2 border-brand/20 hover:border-brand pb-1">
+                    muzdalfazulfiqar11@gmail.com
+                </a>
+                <p class="mt-4 opacity-40 font-mono text-sm uppercase tracking-widest">0343-4344227</p>
+            </div>
+
+            <div class="flex justify-center gap-6">
+                <a href="https://linkedin.com/in/muzdalfa-zulfiqar" target="_blank" class="w-12 h-12 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-brand hover:text-white hover:border-brand transition-all">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/MuzdalfaZulfiqar" target="_blank" class="w-12 h-12 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-brand hover:text-white hover:border-brand transition-all">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-16 text-center opacity-30 font-mono text-[9px] tracking-[0.4em] uppercase">
+        © 2026 MZ · DESIGNED FOR IMPACT
+    </footer>
+  </section>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzdalfa Zulfiqar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Castoro:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        * {
+            /* width: 100vw; */
+            /* background-color: #00000061; */
+            background-color: #252727;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* --scaling-factor: min(100vw, 100vh); */
+            /* Adjusts based on screen width */
+            /* --theme-spx-ratio: calc(var(--scaling-factor) / 1280); */
+
+        }
+
+        body {
+            background-color: #252727;
+            color: white;
+            font-family: "Roboto Slab", serif;
+            font-family: "Azeret Mono", serif;
+        }
+
+        .navbar {
+            background-color: #252727;
+            border-bottom: 2px solid white;
+            padding: 15px;
+        }
+
+        .navbar-brand {
+            font-size: 23px;
+            font-weight: bold;
+            padding: 10px;
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            padding: 10px 15px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #aaa;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler-icon {
+            background-color: white;
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        .nav-item {
+            margin: 10px;
+        }
+
+        .picBio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .picture img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .BioButton {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .Bio {
+            font-size: 32px;
+            font-weight: bold;
+            font-family: "Castoro", serif;
+            line-height: 1.4;
+            color: white;
+            text-align: left;
+        }
+
+        .expertise {
+            font-size: 24px;
+            font-weight: bold;
+            color: #48a3c0;
+        }
+
+        .name {
+            font-size: 24px;
+            font-family: "Azeret Mono", serif;
+        }
+
+        .catchline {
+            line-height: 1.5;
+            font-size: 33px;
+            width: 100%;
+            font-family: "Azeret Mono", serif;
+        }
+
+        .expertise {
+            font-weight: bold;
+            /* font-size: calc(60px * var(--theme-spx-ratio)); Scales with screen size */
+            font-size: 45px;
+            /* Scales with screen size */
+            line-height: 1.5;
+            font-family: "Azeret Mono", monospace;
+        }
+
+        .catchline {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .Buttons {
+            display: flex;
+            /* justify-content: center; */
+            gap: 10px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        button {
+            /* text-align: left; */
+            text-transform: uppercase;
+            padding: 15px;
+            font-family: "Public Sans", sans-serif;
+            width: 160px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            /* border-radius: 5px; */
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid white;
+        }
+
+        .button2 {
+            background-color: #48a3c0;
+            border: 2px solid #48a3c0;
+        }
+
+        .button1:hover {
+            background-color: #656c60;
+            color: white;
+            border: 2px solid #656c60;
+        }
+
+        .button2:hover,
+        .button1:hover {
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+        }
+
+        .aboutme {
+            width: 100%;
+        }
+
+        .section-about {
+            font-family: "Roboto Slab", serif;
+            font-family: "Castoro", serif;
+            padding: 110px;
+            display: flex;
+        }
+
+        .section-name {
+            width: 23%;
+            font-family: "Castoro", serif;
+            font-family: "Azeret Mono", serif;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-bottom: 1px solid rgb(156, 86, 12); */
+            /* text-align: center; */
+        }
+
+        .section-name span {
+            width: 100%;
+            /* border-bottom: 2px solid rgb(156, 86, 12); */
+        }
+
+        .section-content {
+            width: 80%;
+            border-left: 2px solid white;
+            padding-left: 50px;
+            font-size: 1rem;
+        }
+
+
+
+        .section-content p {
+            margin-bottom: 1.5rem;
+            /* Adjust the value as needed for desired spacing */
+            color: white;
+            font-family: "Azeret Mono", serif;
+            font-size: 14px;
+        }
+
+        .quote {
+            font-size: 20px;
+            /* Makes the quote larger */
+            font-style: italic;
+            /* Italicize the text for emphasis */
+            color: rgb(156, 86, 12);
+            /* A dark color for readability */
+            margin: 1em 0;
+            font-weight: bold;
+
+            /* Adds space around the quote */
+            /* padding-left: 1em; Adds space from the left for style */
+            /* border-left: 4px solid #6c757d; Adds a line to the left for visual effect */
+        }
+
+        .section-content p.quote {
+            font-size: 17px;
+            font-style: italic;
+            /* color: rgb(156, 86, 12);   */
+            margin: 1em 0;
+            font-weight: bold;
+        }
+
+        .section-skills {
+            padding: 110px;
+            display: flex;
+            font-family: "Azeret Mono", monospace;
+            /* font-size: 14px; */
+        }
+
+        .section-education,
+        .section-internship,
+        .section-projects {
+            padding: 100px;
+            display: flex;
+            font-family: "Azeret Mono", monospace;
+            /* font-size: 14px; */
+        }
+
+        #skills {
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section-skills .section-name {
+            width: 29%;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skill {
+            /* background: rgba(255, 255, 255, 0.1); */
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            /* border: 1px solid black; */
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill i {
+            font-size: 2.5rem;
+            color: #48a3c0;
+            background-color: black;
+            /* Accent color */
+        }
+
+        .skill h3 {
+            margin-top: 10px;
+            font-size: 14px;
+            background-color: black;
+        }
+
+        .tailwind-logo {
+            width: 3rem;
+            height: 3rem;
+            color: rgb(75, 119, 102);
+            /* Accent color */
+            background-color: black;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .skill i {
+                font-size: 2.5rem;
+            }
+
+            .tailwind-logo {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+
+        .education-section {
+            padding: 40px;
+            background-color: #252727;
+            /* Dark background color */
+            color: white;
+            /* White text color */
+            border-radius: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .education-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: transparent;
+            border-bottom: 1px solid #444;
+            /* Subtle divider between items */
+        }
+
+        .degree-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .degree-title i {
+            color: #48a3c0;
+        }
+
+        .institution-name {
+            font-size: 1rem;
+            color: #ccc;
+            /* Lighter color for institution name */
+            margin-bottom: 5px;
+        }
+
+        .marks,
+        .cga,
+        .semester {
+            font-size: 1.1rem;
+            color: #ccc;
+            /* Light gray color */
+            margin-top: 5px;
+        }
+
+        .marks {
+            font-weight: bold;
+            color: #a1a1a1;
+        }
+
+        /* section{
+            border-bottom: 2px solid white;
+        } */
+
+        .internships-section {
+            padding: 40px;
+            background-color: #252727;
+            /* Dark background */
+            color: white;
+            /* White text color */
+            border-radius: 10px;
+        }
+
+        .internships-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .internship {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #444;
+        }
+
+        .internship h3 {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .internship p {
+            color: #ccc;
+            /* Light gray for description text */
+            margin: 5px 0;
+
+        }
+
+        .internship p strong {
+            color: white;
+            /* Make the "Duration" label stand out */
+        }
+
+        .internship p {
+            margin-bottom: 1.5rem;
+            /* Add some space between paragraphs */
+        }
+
+        .internship i {
+            margin-right: 8px;
+            /* Add space between icon and text */
+            color: #48a3c0;
+            /* White color for icons */
+        }
+
+        .internship h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: white;
+            /* White color for the heading */
+        }
+
+        /* styles.css */
+        /* body {
+    font-family: Arial, sans-serif;
+    background-color: #252727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 28px;
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+            column-gap: 3px;
+        }
+
+        .project-card {
+            background: #48a3c0;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            max-width: 320px;
+            margin: auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Ensures content is spread evenly */
+            min-height: auto;
+            height: auto;
+
+            /* Fixed height for consistent card size */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Icon positioning */
+        .project-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 30px;
+            /* Icon size */
+            color: white;
+            background: #48a3c0;
+        }
+
+        /* Icon positioning */
+        .project-icon i {
+
+            background: #48a3c0;
+        }
+
+        .project-title {
+            color: black;
+            font-size: 1.4rem;
+            margin-top: 50px;
+            /* Add margin to avoid overlap with the icon */
+            text-align: left;
+            background: #48a3c0;
+        }
+
+        .project-description {
+            background: #48a3c0;
+            font-size: 13px;
+            margin: 15px 0;
+            color: black;
+            text-align: left;
+            /* Left align the description */
+        }
+
+        .tech-stack {
+            background: #48a3c0;
+            font-size: 12px;
+            color: #ddd;
+            margin-bottom: 10px;
+            text-align: left;
+            /* Left align the tech stack */
+        }
+
+        .project-links a {
+            text-decoration: none;
+            color: white;
+            padding: 13px 20px;
+            background: black;
+            border: none;
+            display: inline-block;
+            transition: 0.3s;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .project-links {
+            background: #48a3c0;
+        }
+
+        .project-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .projects-container {
+                /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+            }
+
+            .project-card {
+                /* max-width: 260px; */
+                /* height: 380px; */
+                /* Maintain same height for smaller screens */
+            }
+        }
+
+        .contact {
+            background-color: black;
+            /* background: #252727; */
+            color: white;
+            text-align: left;
+            padding: 50px;
+            font-family: "Azeret Mono", monospace;
+        }
+
+        .contact h2 {
+            background-color: black;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            background-color: black;
+        }
+
+        .contact-info p {
+            background-color: black;
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            background-color: black;
+            /* color: #4ee1a0; */
+            color: #48a3c0;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .contact-info p a {
+            background-color: black;
+
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            background-color: black;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            background-color: black;
+            display: inline-block;
+            border: 1px solid white;
+            padding: 10px 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #48a3c0;
+            color: black;
+            border-color: #48a3c0;
+        }
+
+        .footer {
+            background-color: black;
+            /* background: #0a0a0a; */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            font-family: "Azeret Mono", monospace;
+        }
+
+        .footer p {
+            background-color: black;
+        }
+
+        .contact-detail {
+            background-color: black;
+            display: flex;
+            gap: 50px;
+        }
+
+
+
+
+        /* 📌 Responsive Design */
+        @media screen and (min-width: 701px) and (max-width: 992px) {
+            .picBio {
+                /* flex-direction: column; */
+                /* text-align: left;
+                justify-content: flex-start; */
+                justify-content: center;
+
+            }
+
+            .Bio {
+                justify-content: center;
+            }
+
+            .picture img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .Bio {
+                /* text-align: center; */
+                font-size: 28px;
+            }
+
+            .expertise {
+                font-size: 24px;
+            }
+
+            .catchline {
+                font-size: 20px;
+            }
+
+            .Buttons {
+                /* flex-direction: column; */
+                align-items: center;
+                /* justify-content: center; */
+                font-family: "Public Sans", sans-serif;
+            }
+
+            button {
+                /* width: 100%; */
+            }
+
+            .section-about {
+                font-family: "Roboto Slab", serif;
+                font-family: "Castoro", serif;
+                padding: 60px;
+                display: flex;
+            }
+
+            .section-name {
+                width: 23%;
+                font-family: "Castoro", serif;
+                font-family: "Azeret Mono", serif;
+                color: white;
+                font-size: 30px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border-bottom: 1px solid rgb(156, 86, 12); */
+                /* text-align: center; */
+            }
+
+            .section-name span {
+                width: 100%;
+                /* border-bottom: 2px solid rgb(156, 86, 12); */
+            }
+
+            .section-content {
+                width: 80%;
+                border-left: 2px solid white;
+                padding-left: 50px;
+                font-size: 1rem;
+            }
+
+
+
+            .section-content p {
+                margin-bottom: 1.5rem;
+                /* Adjust the value as needed for desired spacing */
+                color: white;
+                font-family: "Azeret Mono", serif;
+                font-size: 14px;
+            }
+
+            .quote {
+                font-size: 20px;
+                /* Makes the quote larger */
+                font-style: italic;
+                /* Italicize the text for emphasis */
+                color: rgb(156, 86, 12);
+                /* A dark color for readability */
+                margin: 1em 0;
+                font-weight: bold;
+
+                /* Adds space around the quote */
+                /* padding-left: 1em; Adds space from the left for style */
+                /* border-left: 4px solid #6c757d; Adds a line to the left for visual effect */
+            }
+
+            .section-content p.quote {
+                font-size: 17px;
+                font-style: italic;
+                /* color: rgb(156, 86, 12);   */
+                margin: 1em 0;
+                font-weight: bold;
+            }
+
+            .section-skills {
+                padding: 77px;
+                display: flex;
+                flex-direction: column;
+                font-family: "Azeret Mono", monospace;
+                /* font-size: 14px; */
+            }
+
+
+            .section-education .section-content,
+            .section-skills .section-content,
+            .section-internship .section-content,
+            .section-projects .section-content {
+                border-left: 0px;
+                width: 100%;
+                border-left: none;
+                padding-left: 0px;
+                font-size: 1rem;
+            }
+
+            .section-skills .section-name {
+                width: 100%;
+                display: block;
+                border-bottom: 2px solid white;
+            }
+
+            .section-education,
+            .section-internship,
+            .section-projects {
+                padding: 70px;
+                display: flex;
+                flex-direction: column;
+                font-family: "Azeret Mono", monospace;
+                /* font-size: 14px; */
+            }
+
+            .section-education .section-name,
+            .section-internship .section-name,
+            .section-projects .section-name {
+                width: 100%;
+                display: block;
+                border-bottom: 2px solid white;
+            }
+
+            .internships-section {
+                padding: 20px;
+            }
+
+            .projects-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .project-card {
+                max-width: 280px;
+                min-height: 424px;
+                height: fit-content;
+                /* Maintain same height for smaller screens */
+                min-height: 380px;
+                height: 450px;
+            }
+
+            .social-links {
+                background-color: black;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .social-links a {
+                font-size: 12px;
+            }
+
+            .contact-detail {
+                background-color: black;
+                display: flex;
+                gap: 154px;
+            }
+        }
+
+        @media screen and (min-width: 831px) and (max-width: 992px) {
+
+            .projects-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .project-card {
+                max-width: 260px;
+                height: fit-content;
+                /* Maintain same height for smaller screens */
+                min-height: 380px;
+                height: 480px;
+            }
+        }
+
+
+        @media screen and (min-width: 300px) and (max-width: 700px) {
+            .picBio {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .Bio {
+                font-size: 24px;
+                justify-content: center;
+            }
+
+            .name {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .expertise {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .catchline {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .picture img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .Buttons {
+                font-family: "Azeret Mono", serif;
+                flex-direction: column;
+                align-items: center;
+                /* justify-content: center; */
+            }
+
+
+            button {
+                font-family: "Public Sans", sans-serif;
+                padding: 12px;
+                font-size: 12px;
+            }
+
+            .section-about {
+                font-family: "Roboto Slab", serif;
+                font-family: "Castoro", serif;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section-name span {
+                /* width: 100%; */
+                display: block;
+                /* border-bottom: 2px solid white; */
+            }
+
+            .section-name {
+                width: 100%;
+                font-family: "Castoro", serif;
+                font-family: "Azeret Mono", serif;
+                color: white;
+                font-size: 26px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .section-content {
+                width: 100%;
+                border-left: none;
+                padding-left: 0px;
+                font-size: 1rem;
+            }
+
+
+
+            .section-content p {
+                margin-bottom: 1.5rem;
+                /* Adjust the value as needed for desired spacing */
+                color: white;
+                font-family: "Azeret Mono", serif;
+                font-size: 13px;
+            }
+
+            .quote {
+                font-size: 20px;
+                /* Makes the quote larger */
+                font-style: italic;
+                /* Italicize the text for emphasis */
+                color: rgb(156, 86, 12);
+                /* A dark color for readability */
+                margin: 1em 0;
+                font-weight: bold;
+
+                /* Adds space around the quote */
+                /* padding-left: 1em; Adds space from the left for style */
+                /* border-left: 4px solid #6c757d; Adds a line to the left for visual effect */
+            }
+
+            .section-content p.quote {
+                font-size: 15px;
+                font-style: italic;
+                /* color: rgb(156, 86, 12);   */
+                margin: 1em 0;
+                font-weight: bold;
+            }
+
+            .section-skills {
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                font-family: "Azeret Mono", monospace;
+                /* font-size: 14px; */
+            }
+
+            .section-education,
+            .section-internship,
+            .section-projects {
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                font-family: "Azeret Mono", monospace;
+                /* font-size: 14px; */
+            }
+
+            .section-title {
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+            }
+
+            .education-item {
+                margin-bottom: 25px;
+                padding: 20px;
+                background-color: transparent;
+                border-bottom: 1px solid #444;
+                /* Subtle divider between items */
+                text-align: left;
+            }
+
+            .degree-title {
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 5px;
+            }
+
+            .degree-title i {
+                color: #48a3c0;
+            }
+
+            .section-about .section-name,
+            .section-skills .section-name,
+            .section-education .section-name,
+            .section-internship .section-name,
+            .section-projects .section-name {
+                width: 100%;
+                display: block;
+                border-bottom: 2px solid white;
+            }
+
+            .institution-name {
+                font-size: 1rem;
+                color: #ccc;
+                /* Lighter color for institution name */
+                margin-bottom: 5px;
+            }
+
+            .marks,
+            .cga,
+            .semester {
+                font-size: 1.1rem;
+                color: #ccc;
+                /* Light gray color */
+                margin-top: 5px;
+            }
+
+            .marks {
+                font-weight: bold;
+                color: #a1a1a1;
+            }
+
+            .projects-container {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+
+            .project-card {
+                max-width: 80vw;
+                height: 350px;
+            }
+
+            .social-links {
+                background-color: black;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .social-links a {
+                font-size: 10px;
+            }
+
+            .contact-detail {
+                background-color: black;
+                display: flex;
+                gap: 64px;
+            }
+
+            .contact-info p a {
+                background-color: black;
+                font-size: 12px;
+            }
+
+            .footer p {
+                background-color: black;
+                font-size: 12px;
+            }
+
+            .internship h3 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: white;
+            }
+
+            .section-content p {
+                font-size: 14px;
+            }
+
+            .internships-section {
+                padding: 16px;
+                padding-left: 0px;
+            }
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 500px) {
+            .section-title {
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+            }
+
+            .education-item {
+                margin-bottom: 25px;
+                padding: 15px;
+                background-color: transparent;
+                border-bottom: 1px solid #444;
+                /* Subtle divider between items */
+                text-align: left;
+                padding-left: 10px;
+            }
+
+            .degree-title {
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 5px;
+            }
+
+            .degree-title i {
+                color: #48a3c0;
+            }
+
+            .institution-name {
+                font-size: 1rem;
+                color: #ccc;
+                /* Lighter color for institution name */
+                margin-bottom: 5px;
+            }
+
+            .marks,
+            .cga,
+            .semester {
+                font-size: 1.1rem;
+                color: #ccc;
+                /* Light gray color */
+                margin-top: 5px;
+            }
+
+            .marks {
+                font-weight: bold;
+                color: #a1a1a1;
+            }
+
+            .section-content {
+                width: 100%;
+                border-left: none;
+                padding-left: -10px;
+                font-size: 1rem;
+            }
+
+            .section-about .section-name,
+            .section-skills .section-name,
+            .section-education .section-name,
+            .section-internship .section-name,
+            .section-projects .section-name {
+                width: 100%;
+                display: block;
+                border-bottom: 2px solid white;
+            }
+
+
+
+            .projects-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+
+
+
+            .project-card {
+                max-width: 80vw;
+                min-height: max-content;
+                height: 370px;
+                /* max-height: 450px; */
+            }
+
+            .social-links {
+                background-color: black;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .social-links a {
+                font-size: 10px;
+            }
+
+            .contact-detail {
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            .contact-info p a {
+                background-color: black;
+                font-size: 12px;
+            }
+
+            .footer p {
+                background-color: black;
+                font-size: 12px;
+            }
+
+            .contact h2 {
+                background-color: black;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .internship h3 {
+                font-size: 13px;
+                margin-bottom: 10px;
+                color: white;
+            }
+
+            .section-content p {
+                font-size: 11px;
+            }
+
+            .internships-section {
+                padding: 16px;
+                padding-left: 0px;
+            }
+        }
+
+        @media (max-width: 300px) {
+
+
+            .section-about .section-name,
+            .section-skills .section-name,
+            .section-education .section-name,
+            .section-internship .section-name,
+            .section-projects .section-name {
+                width: 100%;
+                display: block;
+                border-bottom: 2px solid white;
+            }
+
+            .navbar-brand {
+                font-size: 18px;
+                font-weight: bold;
+                padding: 10px;
+                color: white !important;
+            }
+
+            .picBio {
+                flex-direction: column;
+                text-align: center;
+                /* justify-content: center; */
+                align-items: center;
+            }
+
+            .Bio {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .name {
+                font-size: 20px;
+            }
+
+            .expertise {
+                font-size: 18px;
+            }
+
+            .catchline {
+                font-size: 20px;
+            }
+
+            .picture img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .Buttons {
+                font-family: "Azeret Mono", serif;
+                flex-direction: column;
+                align-items: center;
+                /* justify-content: center; */
+            }
+
+
+            button {
+                font-family: "Public Sans", sans-serif;
+                padding: 12px;
+                font-size: 12px;
+            }
+
+            .section-about {
+                font-family: "Roboto Slab", serif;
+                font-family: "Castoro", serif;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section-name span {
+                /* width: 100%; */
+                display: block;
+                border-bottom: 2px solid white;
+            }
+
+            .section-name {
+                width: 100%;
+                font-family: "Castoro", serif;
+                font-family: "Azeret Mono", serif;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .section-content {
+                width: 100%;
+                border-left: none;
+                padding-left: 0px;
+                font-size: 1rem;
+            }
+
+
+
+            .section-content p {
+                margin-bottom: 1.5rem;
+                /* Adjust the value as needed for desired spacing */
+                color: white;
+                font-family: "Azeret Mono", serif;
+                font-size: 10px;
+            }
+
+            .quote {
+                font-size: 20px;
+                /* Makes the quote larger */
+                font-style: italic;
+                /* Italicize the text for emphasis */
+                color: rgb(156, 86, 12);
+                /* A dark color for readability */
+                margin: 1em 0;
+                font-weight: bold;
+
+                /* Adds space around the quote */
+                /* padding-left: 1em; Adds space from the left for style */
+                /* border-left: 4px solid #6c757d; Adds a line to the left for visual effect */
+            }
+
+            .section-content p.quote {
+                font-size: 11px;
+                font-style: italic;
+                /* color: rgb(156, 86, 12);   */
+                margin: 1em 0;
+                font-weight: bold;
+            }
+
+            .section-skills {
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                font-family: "Azeret Mono", monospace;
+                /* font-size: 14px; */
+            }
+
+            .section-education,
+            .section-internship,
+            .section-projects {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                font-family: "Azeret Mono", monospace;
+                /* font-size: 14px; */
+            }
+
+            .section-title {
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+            }
+
+            .education-item {
+                margin-bottom: 25px;
+                padding: 20px;
+                background-color: transparent;
+                border-bottom: 1px solid #444;
+                /* Subtle divider between items */
+                padding-left: 11px;
+            }
+
+            .degree-title {
+                font-size: 12px;
+                font-weight: bold;
+                color: white;
+                margin-bottom: 5px;
+            }
+
+            .degree-title i {
+                color: #48a3c0;
+            }
+
+            .institution-name {
+                font-size: 1rem;
+                color: #ccc;
+                /* Lighter color for institution name */
+                margin-bottom: 5px;
+            }
+
+            .marks,
+            .cga,
+            .semester {
+                font-size: 1.1rem;
+                color: #ccc;
+                /* Light gray color */
+                margin-top: 5px;
+            }
+
+            .marks {
+                font-weight: bold;
+                color: #a1a1a1;
+            }
+
+            .projects-container {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+
+            .project-card {
+                max-width: 94vw;
+                height: 350px;
+            }
+
+        }
+
+        .button2 a {
+            background-color: #48a3c0;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button2 a:hover {
+            background-color: black;
+            color: white
+        }
+
+        .button2:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .button2:hover a {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head> -->
+
+<!-- <body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Muzdalfa Zulfiqar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Internships">Internships</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="picBio">
+
+
+            <div class="picture">
+                <img src="muzdalfa.jpg" alt="">
+            </div>
+
+            <div class="BioButton">
+
+                <div class="Bio">
+                    <!-- <div class="Hi">Hi</div> -->
+                    <!-- <div class="name">Muzdalfa Zulfiqar</div>
+                    <div class="expertise">WEB DEVELOPER</div>
+                    <div class="catchline"> Designing for People, Not Machines.</div>
+                </div>
+                <div class="Buttons">
+
+                    <button class="button1" id="cbtn"
+                        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Contact
+                        Me</button>
+
+                  <button class="button2">Download CV</button> -->
+                    <!-- <button class="button2">
+                        <a href="assets/Muzdalfa Zulfiqar Resume.pdf" download="Muzdalfa_Zulfiqar_CV.pdf">Download -->
+                            <!-- CV</a> -->
+                    <!-- </button> 
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section class="section-about">
+            <div class="section-name">
+                <span>About Me</span> -->
+            <!-- </div>
+            <div class="section-content aboutme"> -->
+                <!-- <p class="quote">What if we could make everyday challenges disappear with just a few lines of code? That
+                    question
+                    keeps me going every day.</p>
+                <p>Hi, I’m a software engineering student at COMSATS University Islamabad and GDGoC Web Lead. I
+                    specialize in the MERN stack, building user-friendly, responsive web apps.</p>
+                <p>As a top fellow in the Bytewise Fellowship, I’ve honed my problem-solving skills, working on projects -->
+                    <!-- like a Netflix homepage clone and Recipe Master. Currently, I’m exploring AI to enhance my
+                    development approach.</p>
+                <p>Let’s connect and bring ideas to life!</p>
+
+            </div> -->
+
+
+
+
+        <!-- </section>
+        <section class="section-skills" id="skills">
+            <div class="section-name">
+                <span>Skills</span>
+            </div>
+            <div class="section-content">
+                <section id="skills">
+                    <div class="skills-container">
+                        <div class="skill">
+                            <i class="fa-brands fa-react"></i>
+                            <h3>React.js</h3>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-node-js"></i>
+                            <h3>Node.js</h3>
+                        </div>
+                        <div class="skill"> -->
+                            <!-- <i class="fa-solid fa-database"></i>
+                            <h3>MongoDB</h3>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-js"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Express.js</h3>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <h3>Git & GitHub</h3> -->
+                        <!-- </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <h3>Bootstrap</h3>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>REST APIs</h3>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-html5"></i>
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="skill">
+    <i class="fa-brands fa-wordpress"></i>
+    <h3>WordPress</h3>
+</div>
+                        <div class="skill"> -->
+                            <!-- Inline Tailwind CSS SVG -->
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 256 256" class="tailwind-logo">
+                                <defs>
+                                    <linearGradient x1="21.861" y1="8.237" x2="25.703" y2="36.552"
+                                        gradientUnits="userSpaceOnUse" id="color-1_x7XMNGh2vdqA_gr1">
+                                        <stop offset="0" stop-color="#1f5970"></stop>
+                                        <stop offset="1" stop-color="#009bb8"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <g fill="url(#color-1_x7XMNGh2vdqA_gr1)" fill-rule="nonzero" stroke="none"
+                                    stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                    stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                    font-weight="none" font-size="none" text-anchor="none"
+                                    style="mix-blend-mode: normal; background-color: black;">
+                                    <g transform="scale(5.33333,5.33333)">
+                                        <path
+                                            d="M24,9.604c-5.589,0 -9.347,2.439 -11.276,7.318c-0.2,0.505 0.417,0.92 0.816,0.551c2.035,-1.882 4.322,-2.505 6.86,-1.871c1.826,0.456 3.131,1.781 4.576,3.247c2.352,2.387 5.075,5.151 11.024,5.151c5.589,0 9.348,-2.44 11.276,-7.319c0.2,-0.505 -0.417,-0.92 -0.816,-0.551c-2.035,1.882 -4.322,2.506 -6.86,1.872c-1.825,-0.456 -3.13,-1.781 -4.575,-3.247c-2.353,-2.388 -5.077,-5.151 -11.025,-5.151zM12,24c-5.589,0 -9.348,2.44 -11.276,7.319c-0.2,0.505 0.417,0.92 0.816,0.551c2.035,-1.882 4.322,-2.506 6.86,-1.871c1.825,0.457 3.13,1.781 4.575,3.246c2.353,2.388 5.077,5.152 11.025,5.152c5.589,0 9.348,-2.44 11.276,-7.319c0.2,-0.505 -0.417,-0.92 -0.816,-0.551c-2.035,1.882 -4.322,2.506 -6.86,1.871c-1.826,-0.456 -3.131,-1.781 -4.576,-3.246c-2.352,-2.388 -5.075,-5.152 -11.024,-5.152z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg> -->
+                            <!-- <h3>Tailwind CSS</h3>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-java"></i>
+                            <h3>Java</h3>
+                        </div>
+                         <div class="skill">
+            <i class="fa-brands fa-aws"></i>
+            <h3>AWS (EC2, S3 – Basic)</h3>
+        </div>
+                    </div>
+                </section>
+                
+            </div>
+
+        </section>
+
+        <section class="section-education" id="Education"> -->
+            <!-- <div class="section-name">
+                <span>Education</span>
+            </div>
+            <div class="section-content">
+
+                <div class="education-item">
+                    <h3 class="degree-title"><i class="fa-solid fa-graduation-cap"></i> Bachelor's of Software
+                        Engineering</h3>
+                    <p class="institution-name">COMSATS University Islamabad (2022 - 2026)</p>
+                    <p class="cga">CGPA: 3.86</p>
+                </div>
+
+                <div class="education-item">
+                    <h3 class="degree-title"><i class="fa-solid fa-graduation-cap"></i> Intermediate (FSc in Pre
+                        Engineering)</h3>
+                    <p class="institution-name">Punjab Group of Colleges (2020 - 2022)</p>
+                    <p class="marks">Marks: 1067 / 1100</p>
+                </div>
+
+                <div class="education-item"> -->
+                    <!-- <h3 class="degree-title"><i class="fa-solid fa-graduation-cap"></i> Matriculation</h3>
+                    <p class="institution-name">Allied School (2018 - 2020)</p>
+                    <p class="marks">Marks: 1067 / 1100</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section-internship" id="Internships">
+            <div class="section-name">
+                <span>Internships</span>
+            </div> -->
+            <!-- <div class="section-content">
+
+
+                <div class="internships-section">
+                    <div class="internship">
+                        <h3><i class="fa-solid fa-laptop-code"></i> Frontend Fellow - Bytewise Fellowship</h3>
+                        <p><strong> Duration:</strong> July 2024 - August 2024</p>
+                        <p>Worked remotely as a Frontend Fellow, focusing on projects like the Sadapay clone, Netflix
+                            clone, and TaxPal using Tailwind CSS. Gained experience in building responsive web
+                            applications and contributed to real-world development challenges.</p>
+                    </div>
+
+                    <div class="internship">
+                        <h3><i class="fa-solid fa-laptop-code"></i> Web Development Intern - Technic Mentors</h3> -->
+                        <!-- <p><strong> Duration:</strong> July 2024 - August 2024</p>
+                        <p>On-site Web Development internship specializing in React, where I worked on the Notebox
+                            project. Focused on understanding and improving existing codebases while contributing to
+                            feature development.</p>
+                    </div>
+
+                </div>
+
+
+        </section>
+        <section class="section-projects" id="Projects">
+            <div class="section-name" style="padding-right: 80px;">
+                <span>Projects</span>
+            </div>
+            <div class="section-content">
+                <div class="projects-container">
+
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-book-open"></i> Icon for AskSunnah -->
+                        <!-- </div> 
+                        <h2 class="project-title">AskSunnah – Digital Islamic Library & Q&A Platform</h2>
+                        <p class="project-description">
+                            A full-stack web application developed for a Canada-based non-profit organization to manage
+                            a digital Islamic book library , handle structured question submissions with secure admin dashboard for content moderation and management.
+                            Developed collaboratively within a team environment.
+                        </p>
+                        <p class="tech-stack">
+                            Tech Stack: MERN Stack, REST APIs, Stripe for payment processing(donations)
+                        </p>
+                        <div class="project-links"> -->
+                            <!-- <a href="https://asksunnah.com/" target="_blank" class="github">Live Demo</a> -->
+                            <!-- Optional: Add live link if available -->
+                            <!-- <a href="YOUR_LIVE_LINK_HERE" target="_blank">Live Demo</a> -->
+                            
+                        <!-- </div>
+                    </div> -->
+
+                    <!-- Society Spotlight Card -->
+                    <!-- <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-cogs"></i>  Icon for Society Spotlight -->
+                        <!-- </div>
+                        <h2 class="project-title">Society Spotlight</h2>
+                        <p class="project-description">
+                            A platform for university societies like GDG CUI and IEEE to collaborate and showcase their
+                            profiles.
+                        </p>
+                        <p class="tech-stack">Tech Stack: MERN, Bootstrap</p>
+                        <div class="project-links">
+                            <a href="https://github.com/MuzdalfaZulfiqar/Society-Spotlight" target="_blank"
+                                class="github">GitHub</a>
+                        </div>
+                    </div>  -->
+
+                    <!-- Recipe Master Card -->
+                    <!-- <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-utensils"></i> <!-- Icon for Recipe Master -->
+                        <!-- </div>
+                        <h2 class="project-title">Recipe Master</h2>
+                        <p class="project-description">
+                            A MERN stack app for recipe management, featuring authentication and MongoDB cloud storage.
+                        </p>
+                        <p class="tech-stack">Tech Stack: MERN (MongoDB, Express, React, Node.js)</p>
+                        <div class="project-links"> 
+                            <a href="https://github.com/MuzdalfaZulfiqar/Recipe-Master" target="_blank"
+                                class="github">GitHub</a>
+                        </div>
+                    </div> -->
+
+
+
+                    <!-- TaxPal Card -->
+                    <!-- <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-calculator"></i> 
+                        </div>
+                        <h2 class="project-title">TaxPal</h2>
+                        <p class="project-description">
+                            A Tailwind CSS project focused on modern UI design and responsive components.
+                        </p>
+                        <p class="tech-stack">Tech Stack: Tailwind CSS</p>
+                        <div class="project-links">
+                            <a href="https://github.com/MuzdalfaZulfiqar/BytewiseTailwindProject2-TaxPal.github.io"
+                                target="_blank" class="github">GitHub</a>
+                        </div> -->
+                    <!-- </div> -->
+
+                    <!-- AI-Based Exam Seating Card -->
+                    <!-- <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i> 
+                        </div>
+                        <h2 class="project-title">AI-Based Exam Seating</h2>
+                        <p class="project-description">
+                            An AI-driven system to optimize and automate seating arrangements for exams.
+                        </p>
+                        <p class="tech-stack">Tech Stack: Python, AI Algorithms</p>
+                        <div class="project-links">
+                            <a href="https://github.com/MuzdalfaZulfiqar/AI-based-Exam-Seating/tree/main/LabFinal"
+                                target="_blank" class="github">GitHub</a>
+                        </div>
+                    </div> -->
+
+                    <!-- AI-Based Career Suggestion Card -->
+                    <!-- <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-user-tie"></i> 
+                        </div>
+                        <h2 class="project-title">AI-Based Career Suggestion</h2>
+                        <p class="project-description">
+                            An AI-driven system that recommends careers based on skills and interests.
+                        </p>
+                        <p class="tech-stack">Tech Stack: Python, AI</p>
+                        <div class="project-links">
+                            <a href="https://github.com/MuzdalfaZulfiqar/AI-based-career-suggestion" target="_blank"
+                                class="github">GitHub</a>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+        </section>
+
+
+        <!-- <section class="contact" id="contact">
+            <h2>LET'S WORK TOGETHER</h2>
+
+            <div class="contact-detail">
+
+                <div class="contact-info">
+                    <p><a href="mailto:muzdalfazulfiqar11@gmail.com">muzdalfazulfiqar11@gmail.com</a></p>
+                    <p>0343-4344227</p>
+                </div>
+
+                <div class="social-links" style="">
+                    <a href="https://linkedin.com/in/muzdalfa-zulfiqar" target="_blank">LINKEDIN ↗</a>
+                    <a href="https://github.com/MuzdalfaZulfiqar" target="_blank">GITHUB ↗</a>
+                </div>
+            </div>
+        </section> -->
+
+<!-- 
+    </main>
+    <footer class="footer">
+        <p>© 2025 Muzdalfa Zulfiqar. All Rights Reserved.</p>
+    </footer> -->
+
+
+
+<!-- </body> -->
+
+<!-- </html> -->
+
+ 
